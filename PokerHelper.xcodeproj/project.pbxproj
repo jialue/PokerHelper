@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FA22156463C3AD99869C288 /* Pods_PokerHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */; };
+		5D772E0C0F6E96914F195663 /* Pods_PokerHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */; };
+		6532EDE51E6F412B0065A80A /* LFLoginController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6564E7321E6E0D50008FB168 /* LFLoginController.framework */; };
+		6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */; };
+		6564E6FB1E6DFAD7008FB168 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E6FA1E6DFAD7008FB168 /* LoginController.swift */; };
+		6564E7001E6DFAD7008FB168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */; };
+		6564E7031E6DFAD7008FB168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */; };
+		6564E70E1E6DFAD7008FB168 /* PokerHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E70D1E6DFAD7008FB168 /* PokerHelperTests.swift */; };
+		6564E7191E6DFAD7008FB168 /* PokerHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E7181E6DFAD7008FB168 /* PokerHelperUITests.swift */; };
+		6564E72F1E6E0A98008FB168 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6564E72E1E6E0A98008FB168 /* Login.storyboard */; };
+		659B261F1E7EEFC6007AB5EC /* PokerHelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */; };
+		659B26261E7F0A52007AB5EC /* GameData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */; };
+		659B262A1E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B26281E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift */; };
+		659B26311E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B262F1E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift */; };
+		65A65AF31E745B6B00E90109 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65AF21E745B6B00E90109 /* TabBarController.swift */; };
+		65A65AF51E745DF600E90109 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A65AF41E745DF600E90109 /* TabBar.storyboard */; };
+		65A65AF81E74B2D200E90109 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65AF71E74B2D200E90109 /* TableController.swift */; };
+		65A65AFB1E74B5A600E90109 /* NewGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65AFA1E74B5A600E90109 /* NewGameController.swift */; };
+		65A65AFD1E75FB1900E90109 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65AFC1E75FB1900E90109 /* GameCell.swift */; };
+		65A65B031E76179900E90109 /* GameCellTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B021E76179900E90109 /* GameCellTableController.swift */; };
+		65A65B051E771F1600E90109 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B041E771F1600E90109 /* PlayerCell.swift */; };
+		65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B061E786C2700E90109 /* NewPlayerController.swift */; };
+		65A65B321E79CABC00E90109 /* PokerHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */; };
+		65A65B381E79D5B700E90109 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B371E79D5B700E90109 /* DataController.swift */; };
+		65E9BD191ED11B600073E464 /* GameData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */; };
+		FC298AD4BBB9016506DC14DB /* Pods_PokerHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B102AC384951BA2812715FE9 /* Pods_PokerHelperTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6564E70A1E6DFAD7008FB168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6564E6ED1E6DFAD7008FB168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6564E6F41E6DFAD7008FB168;
+			remoteInfo = PokerHelper;
+		};
+		6564E7151E6DFAD7008FB168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6564E6ED1E6DFAD7008FB168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6564E6F41E6DFAD7008FB168;
+			remoteInfo = PokerHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DDD9F49036000219AD7886 /* Pods-PokerHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62E74E1587522298D201652E /* Pods-PokerHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6564E6F51E6DFAD7008FB168 /* PokerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6564E6FA1E6DFAD7008FB168 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6564E7021E6DFAD7008FB168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6564E7041E6DFAD7008FB168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6564E7091E6DFAD7008FB168 /* PokerHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6564E70D1E6DFAD7008FB168 /* PokerHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHelperTests.swift; sourceTree = "<group>"; };
+		6564E70F1E6DFAD7008FB168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6564E7141E6DFAD7008FB168 /* PokerHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6564E7181E6DFAD7008FB168 /* PokerHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHelperUITests.swift; sourceTree = "<group>"; };
+		6564E71A1E6DFAD7008FB168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6564E72E1E6E0A98008FB168 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		6564E7321E6E0D50008FB168 /* LFLoginController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LFLoginController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PokerHelper-cfguodylbxypvvaxoithvvhidcjv/Build/Products/Debug-iphonesimulator/LFLoginController/LFLoginController.framework"; sourceTree = "<group>"; };
+		659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHelpData.swift; sourceTree = "<group>"; };
+		659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		659B26281E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		659B262F1E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65A65AF21E745B6B00E90109 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		65A65AF41E745DF600E90109 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		65A65AF71E74B2D200E90109 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		65A65AFA1E74B5A600E90109 /* NewGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameController.swift; sourceTree = "<group>"; };
+		65A65AFC1E75FB1900E90109 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		65A65B021E76179900E90109 /* GameCellTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCellTableController.swift; sourceTree = "<group>"; };
+		65A65B041E771F1600E90109 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		65A65B061E786C2700E90109 /* NewPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlayerController.swift; sourceTree = "<group>"; };
+		65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokerHelper.xcdatamodel; sourceTree = "<group>"; };
+		65A65B371E79D5B700E90109 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		738A753A04BE069215082D63 /* Pods-PokerHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper.release.xcconfig"; sourceTree = "<group>"; };
+		A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B102AC384951BA2812715FE9 /* Pods_PokerHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7972D5F91CFD054C1A27097 /* Pods-PokerHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA9A44F8F96F10FBE32ABB8E /* Pods-PokerHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		FC88E297A5C7031ECC73CB0B /* Pods-PokerHelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6564E6F21E6DFAD7008FB168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6532EDE51E6F412B0065A80A /* LFLoginController.framework in Frameworks */,
+				5D772E0C0F6E96914F195663 /* Pods_PokerHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7061E6DFAD7008FB168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC298AD4BBB9016506DC14DB /* Pods_PokerHelperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7111E6DFAD7008FB168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA22156463C3AD99869C288 /* Pods_PokerHelperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F3E05F0565BDC4E761D3F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6564E7321E6E0D50008FB168 /* LFLoginController.framework */,
+				11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */,
+				B102AC384951BA2812715FE9 /* Pods_PokerHelperTests.framework */,
+				A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		136EF139E3D8152DD949D93D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A44F8F96F10FBE32ABB8E /* Pods-PokerHelper.debug.xcconfig */,
+				738A753A04BE069215082D63 /* Pods-PokerHelper.release.xcconfig */,
+				62E74E1587522298D201652E /* Pods-PokerHelperTests.debug.xcconfig */,
+				D7972D5F91CFD054C1A27097 /* Pods-PokerHelperTests.release.xcconfig */,
+				FC88E297A5C7031ECC73CB0B /* Pods-PokerHelperUITests.debug.xcconfig */,
+				44DDD9F49036000219AD7886 /* Pods-PokerHelperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6564E6EC1E6DFAD7008FB168 = {
+			isa = PBXGroup;
+			children = (
+				6564E6F71E6DFAD7008FB168 /* PokerHelper */,
+				6564E70C1E6DFAD7008FB168 /* PokerHelperTests */,
+				6564E7171E6DFAD7008FB168 /* PokerHelperUITests */,
+				6564E6F61E6DFAD7008FB168 /* Products */,
+				136EF139E3D8152DD949D93D /* Pods */,
+				0F3E05F0565BDC4E761D3F5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6564E6F61E6DFAD7008FB168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6564E6F51E6DFAD7008FB168 /* PokerHelper.app */,
+				6564E7091E6DFAD7008FB168 /* PokerHelperTests.xctest */,
+				6564E7141E6DFAD7008FB168 /* PokerHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6564E6F71E6DFAD7008FB168 /* PokerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				659B26281E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift */,
+				659B262F1E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift */,
+				659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */,
+				65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */,
+				65A65AFA1E74B5A600E90109 /* NewGameController.swift */,
+				65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */,
+				65A65B061E786C2700E90109 /* NewPlayerController.swift */,
+				65A65AF41E745DF600E90109 /* TabBar.storyboard */,
+				6564E72E1E6E0A98008FB168 /* Login.storyboard */,
+				6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */,
+				6564E6FA1E6DFAD7008FB168 /* LoginController.swift */,
+				6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */,
+				6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */,
+				6564E7041E6DFAD7008FB168 /* Info.plist */,
+				65A65AF21E745B6B00E90109 /* TabBarController.swift */,
+				65A65AF71E74B2D200E90109 /* TableController.swift */,
+				65A65AFC1E75FB1900E90109 /* GameCell.swift */,
+				65A65B021E76179900E90109 /* GameCellTableController.swift */,
+				65A65B041E771F1600E90109 /* PlayerCell.swift */,
+				65A65B371E79D5B700E90109 /* DataController.swift */,
+				659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */,
+			);
+			path = PokerHelper;
+			sourceTree = "<group>";
+		};
+		6564E70C1E6DFAD7008FB168 /* PokerHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				6564E70D1E6DFAD7008FB168 /* PokerHelperTests.swift */,
+				6564E70F1E6DFAD7008FB168 /* Info.plist */,
+			);
+			path = PokerHelperTests;
+			sourceTree = "<group>";
+		};
+		6564E7171E6DFAD7008FB168 /* PokerHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6564E7181E6DFAD7008FB168 /* PokerHelperUITests.swift */,
+				6564E71A1E6DFAD7008FB168 /* Info.plist */,
+			);
+			path = PokerHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6564E6F41E6DFAD7008FB168 /* PokerHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6564E71D1E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelper" */;
+			buildPhases = (
+				83FF76A70AD6654D8D33650B /* [CP] Check Pods Manifest.lock */,
+				6564E6F11E6DFAD7008FB168 /* Sources */,
+				6564E6F21E6DFAD7008FB168 /* Frameworks */,
+				6564E6F31E6DFAD7008FB168 /* Resources */,
+				27C716B9885D0412EEDD7ECA /* [CP] Embed Pods Frameworks */,
+				E17C1DDC59F84DAA2CEBD794 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerHelper;
+			productName = PokerHelper;
+			productReference = 6564E6F51E6DFAD7008FB168 /* PokerHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6564E7081E6DFAD7008FB168 /* PokerHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6564E7201E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelperTests" */;
+			buildPhases = (
+				A8B242756F781DE5A01E75AE /* [CP] Check Pods Manifest.lock */,
+				6564E7051E6DFAD7008FB168 /* Sources */,
+				6564E7061E6DFAD7008FB168 /* Frameworks */,
+				6564E7071E6DFAD7008FB168 /* Resources */,
+				2BB5085EA33B57B0107E19CE /* [CP] Embed Pods Frameworks */,
+				D7925B1338A59A03F6169D98 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6564E70B1E6DFAD7008FB168 /* PBXTargetDependency */,
+			);
+			name = PokerHelperTests;
+			productName = PokerHelperTests;
+			productReference = 6564E7091E6DFAD7008FB168 /* PokerHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6564E7131E6DFAD7008FB168 /* PokerHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6564E7231E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelperUITests" */;
+			buildPhases = (
+				C19FEB0BC9E4E1F1BD92FE07 /* [CP] Check Pods Manifest.lock */,
+				6564E7101E6DFAD7008FB168 /* Sources */,
+				6564E7111E6DFAD7008FB168 /* Frameworks */,
+				6564E7121E6DFAD7008FB168 /* Resources */,
+				4C644D237C95DA8DFEB9D13F /* [CP] Embed Pods Frameworks */,
+				01094438CEC70373EC3ED436 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6564E7161E6DFAD7008FB168 /* PBXTargetDependency */,
+			);
+			name = PokerHelperUITests;
+			productName = PokerHelperUITests;
+			productReference = 6564E7141E6DFAD7008FB168 /* PokerHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6564E6ED1E6DFAD7008FB168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jialue Huang";
+				TargetAttributes = {
+					6564E6F41E6DFAD7008FB168 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TAEF2WNX6P;
+						ProvisioningStyle = Automatic;
+					};
+					6564E7081E6DFAD7008FB168 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6564E6F41E6DFAD7008FB168;
+					};
+					6564E7131E6DFAD7008FB168 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6564E6F41E6DFAD7008FB168;
+					};
+				};
+			};
+			buildConfigurationList = 6564E6F01E6DFAD7008FB168 /* Build configuration list for PBXProject "PokerHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6564E6EC1E6DFAD7008FB168;
+			productRefGroup = 6564E6F61E6DFAD7008FB168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6564E6F41E6DFAD7008FB168 /* PokerHelper */,
+				6564E7081E6DFAD7008FB168 /* PokerHelperTests */,
+				6564E7131E6DFAD7008FB168 /* PokerHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6564E6F31E6DFAD7008FB168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A65AF51E745DF600E90109 /* TabBar.storyboard in Resources */,
+				6564E7031E6DFAD7008FB168 /* LaunchScreen.storyboard in Resources */,
+				6564E7001E6DFAD7008FB168 /* Assets.xcassets in Resources */,
+				6564E72F1E6E0A98008FB168 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7071E6DFAD7008FB168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7121E6DFAD7008FB168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01094438CEC70373EC3ED436 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27C716B9885D0412EEDD7ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BB5085EA33B57B0107E19CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C644D237C95DA8DFEB9D13F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83FF76A70AD6654D8D33650B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B242756F781DE5A01E75AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C19FEB0BC9E4E1F1BD92FE07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7925B1338A59A03F6169D98 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17C1DDC59F84DAA2CEBD794 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6564E6F11E6DFAD7008FB168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B262A1E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift in Sources */,
+				65E9BD191ED11B600073E464 /* GameData+CoreDataProperties.swift in Sources */,
+				65A65AFD1E75FB1900E90109 /* GameCell.swift in Sources */,
+				65A65B321E79CABC00E90109 /* PokerHelper.xcdatamodeld in Sources */,
+				659B26261E7F0A52007AB5EC /* GameData+CoreDataClass.swift in Sources */,
+				65A65B031E76179900E90109 /* GameCellTableController.swift in Sources */,
+				65A65AF31E745B6B00E90109 /* TabBarController.swift in Sources */,
+				659B26311E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift in Sources */,
+				6564E6FB1E6DFAD7008FB168 /* LoginController.swift in Sources */,
+				659B261F1E7EEFC6007AB5EC /* PokerHelpData.swift in Sources */,
+				65A65B051E771F1600E90109 /* PlayerCell.swift in Sources */,
+				65A65AFB1E74B5A600E90109 /* NewGameController.swift in Sources */,
+				6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */,
+				65A65AF81E74B2D200E90109 /* TableController.swift in Sources */,
+				65A65B381E79D5B700E90109 /* DataController.swift in Sources */,
+				65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7051E6DFAD7008FB168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6564E70E1E6DFAD7008FB168 /* PokerHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6564E7101E6DFAD7008FB168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6564E7191E6DFAD7008FB168 /* PokerHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6564E70B1E6DFAD7008FB168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6564E6F41E6DFAD7008FB168 /* PokerHelper */;
+			targetProxy = 6564E70A1E6DFAD7008FB168 /* PBXContainerItemProxy */;
+		};
+		6564E7161E6DFAD7008FB168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6564E6F41E6DFAD7008FB168 /* PokerHelper */;
+			targetProxy = 6564E7151E6DFAD7008FB168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6564E7021E6DFAD7008FB168 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6564E71B1E6DFAD7008FB168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6564E71C1E6DFAD7008FB168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6564E71E1E6DFAD7008FB168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA9A44F8F96F10FBE32ABB8E /* Pods-PokerHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TAEF2WNX6P;
+				INFOPLIST_FILE = PokerHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6564E71F1E6DFAD7008FB168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738A753A04BE069215082D63 /* Pods-PokerHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TAEF2WNX6P;
+				INFOPLIST_FILE = PokerHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6564E7211E6DFAD7008FB168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E74E1587522298D201652E /* Pods-PokerHelperTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PokerHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokerHelper.app/PokerHelper";
+			};
+			name = Debug;
+		};
+		6564E7221E6DFAD7008FB168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7972D5F91CFD054C1A27097 /* Pods-PokerHelperTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PokerHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokerHelper.app/PokerHelper";
+			};
+			name = Release;
+		};
+		6564E7241E6DFAD7008FB168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC88E297A5C7031ECC73CB0B /* Pods-PokerHelperUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PokerHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PokerHelper;
+			};
+			name = Debug;
+		};
+		6564E7251E6DFAD7008FB168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DDD9F49036000219AD7886 /* Pods-PokerHelperUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PokerHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PokerHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6564E6F01E6DFAD7008FB168 /* Build configuration list for PBXProject "PokerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6564E71B1E6DFAD7008FB168 /* Debug */,
+				6564E71C1E6DFAD7008FB168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6564E71D1E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6564E71E1E6DFAD7008FB168 /* Debug */,
+				6564E71F1E6DFAD7008FB168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6564E7201E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6564E7211E6DFAD7008FB168 /* Debug */,
+				6564E7221E6DFAD7008FB168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6564E7231E6DFAD7008FB168 /* Build configuration list for PBXNativeTarget "PokerHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6564E7241E6DFAD7008FB168 /* Debug */,
+				6564E7251E6DFAD7008FB168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */,
+			);
+			currentVersion = 65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */;
+			path = PokerHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6564E6ED1E6DFAD7008FB168 /* Project object */;
+}

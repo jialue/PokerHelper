@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TableController.tableView(UITableView, editingStyleForRowAt : IndexPath) -&gt; UITableViewCellEditingStyle:TableController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GameCellTableController.tableView(UITableView, canEditRowAt : IndexPath) -&gt; Bool:GameCellTableController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GameCellTableController.endGame(Any) -&gt; ():GameCellTableController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:TableController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableController.tableView(UITableView, canEditRowAt : IndexPath) -&gt; Bool:TableController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
