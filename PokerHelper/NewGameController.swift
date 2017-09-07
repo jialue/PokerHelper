@@ -14,7 +14,10 @@ class NewGameController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ratioText: UITextField!
     @IBOutlet weak var smallBlindText: UITextField!
     @IBOutlet weak var bigBlindText: UITextField!
+    @IBOutlet weak var stackText: UITextField!
+    
     var table: TableController?
+    var defaultStack = Int(0)
     let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,36 +30,21 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         if ratioText.text == "" {
             ratioText.text = "0.1"
         }
-//        if playerName.text == nil {
-//            playerName.text = "New Player"
-//        }
         if smallBlindText.text == "" {
             smallBlindText.text = "1";
         }
         if bigBlindText.text == "" {
             bigBlindText.text = "2";
         }
-//        let names = playerName.text?.components(separatedBy: ";")
-//        let buyIn = 0
-//        let gameData = dataController.create<GameData>(entityName: "GameData")
+        if stackText.text == "" {
+            stackText.text = "200";
+        }
         let gameData = dataController.create(entityName: "GameData") as! GameData
-//        gameData.playerNames = [String]()
-//        gameData.playerData = Dictionary<String, Int>()
-//        gameData.playerBuyin = Dictionary<String, Int>()
-//        for name in names! {
-//            if name == "" {
-//                continue
-//            }
-//            gameData.playerNames?.append(name)
-//            gameData.playerData?[name] = buyIn
-//            gameData.detail = name
-//            gameData.buyin += Int64(buyIn);
-//        }
         gameData.ratio = Float(ratioText.text!)!
         gameData.smallblind = Int32(smallBlindText.text!)!
         gameData.bigblind = Int32(bigBlindText.text!)!
         gameData.date = NSDate()
-//        let game = Game(pokerPlayers: players, ratio: ratio, smallBlind: smallBlind, bigBlind: bigBlind)
+        defaultStack = Int(stackText.text!)!
         table?.games.append(gameData)
         table?.tableView.reloadData()
         dataController.save()

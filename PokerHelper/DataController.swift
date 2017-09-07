@@ -30,8 +30,10 @@ class DataController: NSObject {
              This code uses a file named "DataModel.sqlite" in the application's documents directory.
              */
             let storeURL = docURL.appendingPathComponent("DataModel.sqlite")
+            let options = [ NSInferMappingModelAutomaticallyOption : true,
+                            NSMigratePersistentStoresAutomaticallyOption : true]
             do {
-                try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+                try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: options)
             } catch {
                 fatalError("Error migrating store: \(error)")
             }

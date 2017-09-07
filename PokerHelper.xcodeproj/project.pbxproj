@@ -84,6 +84,7 @@
 		65A65B061E786C2700E90109 /* NewPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlayerController.swift; sourceTree = "<group>"; };
 		65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokerHelper.xcdatamodel; sourceTree = "<group>"; };
 		65A65B371E79D5B700E90109 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		65CC1D8B1F41FB8200B39DEA /* PokerHelper 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PokerHelper 2.xcdatamodel"; sourceTree = "<group>"; };
 		65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		738A753A04BE069215082D63 /* Pods-PokerHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper.release.xcconfig"; sourceTree = "<group>"; };
 		A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -785,6 +786,7 @@
 		65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				65CC1D8B1F41FB8200B39DEA /* PokerHelper 2.xcdatamodel */,
 				65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */,
 			);
 			currentVersion = 65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */;
