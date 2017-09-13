@@ -10,12 +10,14 @@ PODS:
   - Realm/Headers (1.1.0)
   - RealmSwift (1.1.0):
     - Realm (= 1.1.0)
+  - SwiftSocket (2.0.1)
   - SwipeableTabBarController (1.0.4)
 
 DEPENDENCIES:
   - Charts/Realm
   - IQKeyboardManagerSwift
   - LFLoginController
+  - SwiftSocket
   - SwipeableTabBarController
 
 SPEC CHECKSUMS:
@@ -24,8 +26,9 @@ SPEC CHECKSUMS:
   LFLoginController: 9c658847b55f30dfa0c780f5331fb63117853aef
   Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
   SwipeableTabBarController: a52688ad47614ba98611df30a788202db90620fe
 
-PODFILE CHECKSUM: 2645878e639d950808275cc0841660591f838747
+PODFILE CHECKSUM: f45cc00086c45447af14a5ac00cabe8ab09ba31d
 
 COCOAPODS: 1.1.1

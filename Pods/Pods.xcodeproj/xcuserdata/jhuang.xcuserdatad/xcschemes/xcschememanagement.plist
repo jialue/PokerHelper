@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwipeableTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34BA90A7E2ABE77A8D9895637916AE3F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>65977CFE08168F65184637FAC31B3C1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +77,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6CB12C1087A2419C436575DCC1A62333</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>958D0BE57A4152DABF58C37C6AAC3F4C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C696DA26597F72D92F219BF01F736B23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DFBB8C08D72FD6942AA3BCD19D2EC4FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3BE3F167194FB604F746CE23970EE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

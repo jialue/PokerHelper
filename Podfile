@@ -11,6 +11,7 @@ target 'PokerHelper' do
     pod 'IQKeyboardManagerSwift'
     pod 'Charts/Realm'
     pod 'SwipeableTabBarController'
+    pod 'SwiftSocket'
     
     target 'PokerHelperTests' do
         inherit! :search_paths

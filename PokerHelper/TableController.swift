@@ -8,15 +8,25 @@
 
 import UIKit
 import CoreData
+import SwiftSocket
 
 class TableController: UITableViewController {
     let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
     var games = [GameData]()
     var cellGame: GameData?
+    
+    // server info
+    let host = "127.0.0.1"
+    let port = 8081
+    var client: TCPClient?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Game List"
+//        title = "Game List"
         games = dataController.fetch(entityName: "GameData") as! [GameData]
+        
+        // server connect
+        client = TCPClient(address: host, port: Int32(port))
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // 1
@@ -43,31 +53,11 @@ class TableController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Get Cell Label
-//        let cell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!) as! GameCell
-//        cellGame = cell.game
         cellGame = games[indexPath.row]
         performSegue(withIdentifier: "segueToGameCell", sender: self)
         
     }
     
-    
-//    override func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
-    
-//        let cashout = UITableViewRowAction(style: .destructive, title: "End") { action, index in
-//            let alert = UIAlertController(title: "Do you want to end this game?", message: "", preferredStyle: .alert)
-//            alert.addAction(UIAlertAction(title: "End", style: .default, handler: { [weak alert] (_) in
-//                let cell = self.games[editActionsForRowAt.row]
-//                self.dataController.delete(object: cell)
-//                self.dataController.save()
-//            }))
-////            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { [weak alert] (_) in}))
-//            self.present(alert, animated: true, completion: nil)
-//        }
-//        cashout.backgroundColor = .lightGray
-//        return [cashout]
-        
-//    }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
@@ -98,5 +88,41 @@ class TableController: UITableViewController {
 //            let gameCellTable = vc.viewControllers[0] as! GameCellTableController
             gameCellTable.game = cellGame
         }
+    }
+    
+    @IBAction func sendButtonAction() {
+        guard let client = client else { return }
+        
+        switch client.connect(timeout: 10) {
+        case .success:
+            appendToTextField(string: "Connected to host \(client.address)")
+            if let response = sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client) {
+                appendToTextField(string: "Response: \(response)")
+            }
+        case .failure(let error):
+            appendToTextField(string: String(describing: error))
+        }
+    }
+    
+    private func sendRequest(string: String, using client: TCPClient) -> String? {
+        appendToTextField(string: "Sending data ... ")
+        
+        switch client.send(string: string) {
+        case .success:
+            return readResponse(from: client)
+        case .failure(let error):
+            appendToTextField(string: String(describing: error))
+            return nil
+        }
+    }
+    
+    private func readResponse(from client: TCPClient) -> String? {
+        guard let response = client.read(1024*10, timeout:10) else { return nil }
+        
+        return String(bytes: response, encoding: .utf8)
+    }
+    
+    private func appendToTextField(string: String) {
+        print(string)
     }
 }

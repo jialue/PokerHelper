@@ -110,6 +110,16 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="59F-2a-2NZ"/>
                     <navigationItem key="navigationItem" title="Games" id="kxd-8v-lh2">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="SW8-O1-rp3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0rI-Ex-bLl">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="sendButtonAction" destination="k7G-sZ-Vzw" eventType="touchUpInside" id="h63-eC-sLf"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="rcf-J7-Nhi">
                             <connections>
                                 <segue destination="Jo9-2O-6mT" kind="presentation" identifier="segueToNewGame" id="Mrl-gj-Qmr"/>
