@@ -12,6 +12,7 @@ target 'PokerHelper' do
     pod 'Charts/Realm'
     pod 'SwipeableTabBarController'
     pod 'SwiftSocket'
+    pod 'SwiftyJSON'
     
     target 'PokerHelperTests' do
         inherit! :search_paths

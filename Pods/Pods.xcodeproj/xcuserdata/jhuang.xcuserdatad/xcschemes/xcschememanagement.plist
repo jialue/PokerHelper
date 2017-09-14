@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwipeableTabBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,6 +62,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0FC1965FF7ACFCBE3DE69F47DFBD7678</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24712DEB79F57D28F03EA1359679BACF</key>
 		<dict>
 			<key>primary</key>
@@ -77,27 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CB12C1087A2419C436575DCC1A62333</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>958D0BE57A4152DABF58C37C6AAC3F4C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C696DA26597F72D92F219BF01F736B23</key>
+		<key>B08656B5A7CFE69D74D02B8AED7EEBED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0F6DB5F2175AD847CAB98662B56EE04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE905946713D6CF7312D1CEA66F660D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DFBB8C08D72FD6942AA3BCD19D2EC4FC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E3BE3F167194FB604F746CE23970EE01</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E3BE3F167194FB604F746CE23970EE01"
+               BlueprintIdentifier = "B0F6DB5F2175AD847CAB98662B56EE04"
                BuildableName = "Pods_PokerHelper.framework"
                BlueprintName = "Pods-PokerHelper"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E3BE3F167194FB604F746CE23970EE01"
+            BlueprintIdentifier = "B0F6DB5F2175AD847CAB98662B56EE04"
             BuildableName = "Pods_PokerHelper.framework"
             BlueprintName = "Pods-PokerHelper"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,16 +9,32 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import SwiftSocket
+//import Util
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let dataController = DataController()
+    // server info
+    let host = "127.0.0.1"
+    let port = 8081
+    var client: TCPClient?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
+        
+        client = TCPClient(address: host, port: Int32(port))
+//        guard let client = client else { return }
+        switch client!.connect(timeout: 10) {
+        case .success:
+            print("Connected to host \(client!.address)")
+            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client!)
+        case .failure(let error):
+            print(String(describing: error))
+        }
         return true
     }
 

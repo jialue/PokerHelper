@@ -31,6 +31,7 @@
 		65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B061E786C2700E90109 /* NewPlayerController.swift */; };
 		65A65B321E79CABC00E90109 /* PokerHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */; };
 		65A65B381E79D5B700E90109 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A65B371E79D5B700E90109 /* DataController.swift */; };
+		65B45A501F6AFA6F00EA6A36 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B45A4F1F6AFA6F00EA6A36 /* Util.swift */; };
 		65E9BD191ED11B600073E464 /* GameData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */; };
 		FC298AD4BBB9016506DC14DB /* Pods_PokerHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B102AC384951BA2812715FE9 /* Pods_PokerHelperTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		65A65B061E786C2700E90109 /* NewPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlayerController.swift; sourceTree = "<group>"; };
 		65A65B311E79CABC00E90109 /* PokerHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokerHelper.xcdatamodel; sourceTree = "<group>"; };
 		65A65B371E79D5B700E90109 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		65B45A4F1F6AFA6F00EA6A36 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		65CC1D8B1F41FB8200B39DEA /* PokerHelper 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PokerHelper 2.xcdatamodel"; sourceTree = "<group>"; };
 		65E9BD181ED11B600073E464 /* GameData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		738A753A04BE069215082D63 /* Pods-PokerHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				65A65B041E771F1600E90109 /* PlayerCell.swift */,
 				65A65B371E79D5B700E90109 /* DataController.swift */,
 				659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */,
+				65B45A4F1F6AFA6F00EA6A36 /* Util.swift */,
 			);
 			path = PokerHelper;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				65A65AF81E74B2D200E90109 /* TableController.swift in Sources */,
 				65A65B381E79D5B700E90109 /* DataController.swift in Sources */,
 				65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */,
+				65B45A501F6AFA6F00EA6A36 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

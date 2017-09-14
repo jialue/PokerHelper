@@ -11,22 +11,39 @@ import CoreData
 import SwiftSocket
 
 class TableController: UITableViewController {
-    let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
+//    let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
+//    var client = (UIApplication.shared.delegate as! AppDelegate).client
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var games = [GameData]()
     var cellGame: GameData?
-    
+    var dataController : DataController?
+//    var client : TCPClient?
     // server info
-    let host = "127.0.0.1"
-    let port = 8081
-    var client: TCPClient?
+//    let host = "127.0.0.1"
+//    let port = 8081
+//    var client: TCPClient?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        title = "Game List"
-        games = dataController.fetch(entityName: "GameData") as! [GameData]
-        
-        // server connect
-        client = TCPClient(address: host, port: Int32(port))
+//        dataController = appDelegate.dataController
+//        client = appDelegate.client
+        games = appDelegate.dataController.fetch(entityName: "GameData") as! [GameData]
+        switch appDelegate.client!.connect(timeout: 10) {
+        case .success:
+            print("Connected to host \(appDelegate.client!.address)")
+//            Util.ServerUtil.sendRequest(string: "POST /login HTTP/1.0\r\n\r\n", using: appDelegate.client!)
+        case .failure(let error):
+            print(String(describing: error))
+        }
+//        appDelegate.client!.connect(timeout: 10) {
+//            case .success:
+//                Util.ServerUtil.sendRequest(string: "POST /login HTTP/1.0\r\n\r\n", using: appDelegate.client!)
+//            case .failure(let error):
+//                appendToTextField(string: String(describing: error))
+//            }
+//        }
+    
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // 1
@@ -62,8 +79,8 @@ class TableController: UITableViewController {
         if editingStyle == .delete {
             
             // remove the item from the data model
-            dataController.delete(object: games[indexPath.row])
-            dataController.save()
+            appDelegate.dataController.delete(object: games[indexPath.row])
+            appDelegate.dataController.save()
             games.remove(at: indexPath.row)
             // delete the table view row
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -91,38 +108,46 @@ class TableController: UITableViewController {
     }
     
     @IBAction func sendButtonAction() {
-        guard let client = client else { return }
-        
-        switch client.connect(timeout: 10) {
+        switch appDelegate.client!.connect(timeout: 10) {
         case .success:
-            appendToTextField(string: "Connected to host \(client.address)")
-            if let response = sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client) {
-                appendToTextField(string: "Response: \(response)")
-            }
+            print("Connected to host \(appDelegate.client!.address)")
+            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: appDelegate.client!)
         case .failure(let error):
-            appendToTextField(string: String(describing: error))
+            print(String(describing: error))
         }
-    }
-    
-    private func sendRequest(string: String, using client: TCPClient) -> String? {
-        appendToTextField(string: "Sending data ... ")
         
-        switch client.send(string: string) {
-        case .success:
-            return readResponse(from: client)
-        case .failure(let error):
-            appendToTextField(string: String(describing: error))
-            return nil
-        }
+//        guard let client = client else { return }
+//        
+//        switch client.connect(timeout: 10) {
+//        case .success:
+//            appendToTextField(string: "Connected to host \(client.address)")
+//            if let response = sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client) {
+//                appendToTextField(string: "Response: \(response)")
+//            }
+//        case .failure(let error):
+//            appendToTextField(string: String(describing: error))
+//        }
     }
     
-    private func readResponse(from client: TCPClient) -> String? {
-        guard let response = client.read(1024*10, timeout:10) else { return nil }
-        
-        return String(bytes: response, encoding: .utf8)
-    }
-    
-    private func appendToTextField(string: String) {
-        print(string)
-    }
+//    private func sendRequest(string: String, using client: TCPClient) -> String? {
+//        appendToTextField(string: "Sending data ... ")
+//        
+//        switch client.send(string: string) {
+//        case .success:
+//            return readResponse(from: client)
+//        case .failure(let error):
+//            appendToTextField(string: String(describing: error))
+//            return nil
+//        }
+//    }
+//    
+//    private func readResponse(from client: TCPClient) -> String? {
+//        guard let response = client.read(1024*10, timeout:10) else { return nil }
+//        
+//        return String(bytes: response, encoding: .utf8)
+//    }
+//    
+//    private func appendToTextField(string: String) {
+//        print(string)
+//    }
 }

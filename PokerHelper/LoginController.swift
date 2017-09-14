@@ -10,10 +10,12 @@
 
 import UIKit
 import LFLoginController
+import SwiftSocket
 
 class LoginController: UIViewController {
     
     let controller = LFLoginController()
+    var client = (UIApplication.shared.delegate as! AppDelegate).client
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +25,10 @@ class LoginController: UIViewController {
         // Customizations
         controller.logo = UIImage(named: "AwesomeLabsLogoWhite")
         self.navigationController?.pushViewController(controller, animated: false)
-//		controller.videoURL = NSBundle.mainBundle().URLForResource("PolarBear", withExtension: "mov")!
-//		controller.loginButtonColor = UIColor.purpleColor()
-//		controller.setupOnePassword("YourAppName", appUrl: "YourAppURL")
+        
+        // login message
+        Util.ServerUtil.sendRequest(string: "POST /login HTTP/1.0\r\nAccept: application/json\r\nContent-Type: application/json\r\n", using: client!)
+        
     }
     
 //    @IBAction func butLoginTapped(sender: AnyObject) {
