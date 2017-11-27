@@ -4,8 +4,14 @@
 [![License](https://img.shields.io/cocoapods/l/SwipeableTabBarController.svg?style=flat-square)](http://cocoapods.org/pods/SwipeableTabBarController)
 ![iOS 8.0+](https://img.shields.io/badge/iOS-8.0%2B-blue.svg?style=flat-square)
 ![Swift 3.0+](https://img.shields.io/badge/Swift-3.0%2B-orange.svg?style=flat-square)
+[![codebeat badge](https://codebeat.co/badges/0cb2f5b2-5bd1-4cbe-8581-3ca3df0e79ab)](https://codebeat.co/projects/github-com-marcosgriselli-swipeabletabbarcontroller-master)
 
-<a href="url"><img src="./GIFs/SwipeableTabBarController.gif" height="650" width="375" ></a><br />
+<a href="url"><img src="./GIFs/SwipeableTabBarController.gif"></a><br />
+
+
+The iPhone mockups can be found [here](https://pixabay.com/en/phone-iphone-black-cellphone-1830479/) &  [here](https://pixabay.com/en/iphone-iphone-6s-smartphone-mobile-1936818/).
+
+All the designs belong to [To Do App UI kit](https://www.invisionapp.com/do) by [Invision](https://www.invisionapp.com).
 
 ## Installation
 
@@ -50,19 +56,19 @@ If you are supporting just one type of animation call it on `viewDidLoad()` othe
 
 #### Side by Side (default)
 
-<a href="url"><img src="./GIFs/SideBySideAnimation.gif" align= height="216" width="125" ></a>
+<a href="url"><img src="./GIFs/SideBySideAnimation.gif" height="216" width="125" ></a>
 
 The default animation is `SwipeAnimationType.sideBySide` where the newly selected tab will move in at the same speed the previous one moves out.
 
 #### Overlap
 
-<a href="url"><img src="./GIFs/OverlapAnimation.gif" height="216" width="125" ></a>
+<a href="url"><img src="./GIFs/OverlapAnimation.gif" height="240" width="125" ></a>
 
 `SwipeAnimationType.overlap` the newly selected tab will move in to take the central place on top of the previous one which will hold it's position.
 
 #### Push
 
-<a href="url"><img src="./GIFs/PushAnimation.gif" height="216" width="125" ></a>
+<a href="url"><img src="./GIFs/PushAnimation.gif" height="240" width="125" ></a>
 
 `SwipeAnimationType.push` follows iOS default push animation where the top view moves away while the bottom one slightly moves behind. In this case, the top view will be the previously selected tab view.
 
@@ -84,7 +90,7 @@ Default value is ```true```
 
 ```swift
 setTabBarSwipe(enabled: false)
-``` 
+```
 
 ## Example
 

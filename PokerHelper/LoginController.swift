@@ -43,6 +43,10 @@ class LoginController: UIViewController {
 }
 
 extension LoginController: LFLoginControllerDelegate {
+    public func forgotPasswordTapped(email: String) {
+        
+    }
+
     
     func loginDidFinish(email: String, password: String, type: LFLoginController.SendType) {
         

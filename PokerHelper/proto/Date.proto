@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package proto;
+
+message Date {
+	string day = 1;
+	string month = 2;
+	string year = 3;
+}

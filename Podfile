@@ -13,6 +13,7 @@ target 'PokerHelper' do
     pod 'SwipeableTabBarController'
     pod 'SwiftSocket'
     pod 'SwiftyJSON'
+    pod 'SwiftProtobuf', '~> 1.0'
     
     target 'PokerHelperTests' do
         inherit! :search_paths

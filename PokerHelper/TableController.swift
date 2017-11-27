@@ -111,7 +111,21 @@ class TableController: UITableViewController {
         switch appDelegate.client!.connect(timeout: 10) {
         case .success:
             print("Connected to host \(appDelegate.client!.address)")
-            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: appDelegate.client!)
+//            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.1\r\n\r\n", using: appDelegate.client!)
+            
+            var data = Proto_GameData();
+            data.bigBlind = 1111;
+            data.buyin = 2222;
+            data.date.day = "25";
+            data.date.month = "11";
+            data.date.year = "2017";
+            
+//            let jsonString: String = try! data.jsonString()
+//            let json = try! Proto_GameData(jsonString: jsonString)
+            let request = Util.HttpRequest(method: "PUT", requestURI: "/createGame", requestData: data)
+            Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+            
+            
         case .failure(let error):
             print(String(describing: error))
         }

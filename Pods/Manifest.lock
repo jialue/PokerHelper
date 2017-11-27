@@ -3,35 +3,38 @@ PODS:
   - Charts/Realm (3.0.1):
     - Charts/Core
     - RealmSwift (~> 1.1)
-  - IQKeyboardManagerSwift (4.0.9)
-  - LFLoginController (0.2.8)
+  - IQKeyboardManagerSwift (5.0.6)
+  - LFLoginController (0.2.9)
   - Realm (1.1.0):
     - Realm/Headers (= 1.1.0)
   - Realm/Headers (1.1.0)
   - RealmSwift (1.1.0):
     - Realm (= 1.1.0)
-  - SwiftSocket (2.0.1)
-  - SwiftyJSON (3.1.4)
-  - SwipeableTabBarController (1.0.4)
+  - SwiftProtobuf (1.0.1)
+  - SwiftSocket (2.0.2)
+  - SwiftyJSON (4.0.0)
+  - SwipeableTabBarController (1.0.8)
 
 DEPENDENCIES:
   - Charts/Realm
   - IQKeyboardManagerSwift
   - LFLoginController
+  - SwiftProtobuf (~> 1.0)
   - SwiftSocket
   - SwiftyJSON
   - SwipeableTabBarController
 
 SPEC CHECKSUMS:
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
-  LFLoginController: 9c658847b55f30dfa0c780f5331fb63117853aef
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  LFLoginController: 550ddae1cc2ffdb7fa2253d4b28e607233127c6c
   Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
-  SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  SwipeableTabBarController: a52688ad47614ba98611df30a788202db90620fe
+  SwiftProtobuf: 78b2f4f3b282cad8cedf855358ec5c1921aaf633
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwipeableTabBarController: a5ac23b96e96aa35b857799e431f605f9350105a
 
-PODFILE CHECKSUM: ffea0e329fd6de0937783ab3f50baa0a8e0ab232
+PODFILE CHECKSUM: 1547aeff76610a9adba9729450833bff337fba9c
 
 COCOAPODS: 1.1.1

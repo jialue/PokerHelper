@@ -8,16 +8,18 @@
 
 import UIKit
 import CoreData
+import SwiftSocket
 
 class NewGameController: UIViewController, UITextFieldDelegate {
 //    @IBOutlet weak var playerName: UITextField!
     @IBOutlet weak var ratioText: UITextField!
     @IBOutlet weak var smallBlindText: UITextField!
     @IBOutlet weak var bigBlindText: UITextField!
-    @IBOutlet weak var stackText: UITextField!
+//    @IBOutlet weak var stackText: UITextField!
     
     var table: TableController?
     var defaultStack = Int(0)
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,23 +38,41 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         if bigBlindText.text == "" {
             bigBlindText.text = "2";
         }
-        if stackText.text == "" {
-            stackText.text = "200";
-        }
+        //        if stackText.text == "" {
+        //            stackText.text = "200";
+        //        }
         let gameData = dataController.create(entityName: "GameData") as! GameData
         gameData.ratio = Float(ratioText.text!)!
         gameData.smallblind = Int32(smallBlindText.text!)!
         gameData.bigblind = Int32(bigBlindText.text!)!
         gameData.date = NSDate()
-        defaultStack = Int(stackText.text!)!
+        //        defaultStack = Int(stackText.text!)!
         table?.games.append(gameData)
         table?.tableView.reloadData()
+        
+        // save to local
         dataController.save()
+        
+        //TODO send game context to server
+        var data = Proto_GameData();
+        data.smallBlind = gameData.smallblind
+        data.bigBlind = gameData.bigblind
+        data.ratio = gameData.ratio
+        data.buyin = gameData.buyin
+//        data.detail = gameData.detail!
+//        data.location = gameData.location
+        data.date.day = "25";
+        data.date.month = "11";
+        data.date.year = "2017";
+        let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: data)
+        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+        
         self.dismiss(animated: true, completion: {});
     }
 
     @IBAction func Cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: {});
     }
+    
 
 }

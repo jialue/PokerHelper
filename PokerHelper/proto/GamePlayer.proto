@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+message GamePlayer {
+	int32 id = 1;
+	string name = 2;
+	int64 buyin = 3;
+	int64 stack = 4;
+
+	string email = 5;
+}
