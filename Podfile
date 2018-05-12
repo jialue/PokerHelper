@@ -9,7 +9,7 @@ target 'PokerHelper' do
     pod 'LFLoginController'
     #  pod 'FoldingTabBar', '~> 1.1'
     pod 'IQKeyboardManagerSwift'
-    pod 'Charts/Realm'
+    pod 'ChartsRealm'
     pod 'SwipeableTabBarController'
     pod 'SwiftSocket'
     pod 'SwiftyJSON'

@@ -53,12 +53,15 @@ class DataController: NSObject {
         managedObjectContext.delete(object)
     }
     func save() {
-        do {
-            try managedObjectContext.save()
-        }
-        catch {
-            let saveError = error as NSError
-            print(saveError)
+        if managedObjectContext.hasChanges {
+            do {
+                try managedObjectContext.save()
+                print("core data saved")
+            }
+            catch {
+                let saveError = error as NSError
+                print(saveError)
+            }
         }
     }
     func fetch(entityName: String) -> [NSManagedObject] {

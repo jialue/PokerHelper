@@ -8,9 +8,25 @@
 
 import Foundation
 import SwiftSocket
+import SwiftyJSON
 
 struct Util {
     
+}
+
+
+extension String {
+    func find(_ input: String,
+                 options: String.CompareOptions = .literal) -> String.Index {
+        return (self.range(of: input, options: options)?.lowerBound)!
+    }
+    func lastIndex(of string: String) -> Int? {
+        guard let index = range(of: string, options: .backwards) else { return nil }
+        return self.distance(from: self.startIndex, to: index.lowerBound)
+    }
+//    func find_last(_ input: String) -> String.Index? {
+//        return indexOf(input, options: .backwards)
+//    }
 }
 
 extension Util {
@@ -32,6 +48,21 @@ extension Util {
             let json = try! requestData.jsonString()
             setBody(body: json)
         }
+        
+        init(method: String, requestURI: String, jsonString: String) {
+            _method = method
+            _requestURI = requestURI
+            _version = "1.1"
+            setBody(body: jsonString)
+        }
+        
+        init(method: String, requestURI: String, json: JSON) {
+            _method = method
+            _requestURI = requestURI
+            _version = "1.1"
+            setBody(body: json.rawString()!)
+        }
+        
         public func addHeader(header: String, content: String) {
             _headers[header] = content
         }
@@ -62,6 +93,40 @@ extension Util {
 //                return readResponse(from: client)
                 if let response = readResponse(from: client) {
                     print("Response: \(response)")
+                }
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
+        
+        static public func sendRequest(string: String, using client: TCPClient, completion: (_ message: String) -> Void) {
+            print("Sending data ... ")
+            
+            switch client.send(string: string) {
+            case .success:
+                if let response = readResponse(from: client) {
+                    print("Response: \(response)")
+                    let index = response.find("\r\n\r\n")
+                    let start = response.index(index, offsetBy: 2)
+                    let body = String(response[start...])
+                    completion(body)
+                }
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
+        
+        static public func sendRequest(string: String, using client: TCPClient, completion: (_ message: String) throws -> Void) throws {
+            print("Sending data ... ")
+            
+            switch client.send(string: string) {
+            case .success:
+                if let response = readResponse(from: client) {
+                    print("Response: \(response)")
+                    let index = response.find("\r\n\r\n")
+                    let start = response.index(index, offsetBy: 2)
+                    let body = String(response[start...])
+                    try completion(body)
                 }
             case .failure(let error):
                 print(String(describing: error))

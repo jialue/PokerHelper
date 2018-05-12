@@ -1,0 +1,6 @@
+username: root
+password hint: whoami
+
+login:
+mysql -u USERNAME -p
+

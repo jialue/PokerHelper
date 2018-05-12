@@ -1,22 +1,24 @@
 PODS:
-  - Charts/Core (3.0.1)
-  - Charts/Realm (3.0.1):
-    - Charts/Core
-    - RealmSwift (~> 1.1)
-  - IQKeyboardManagerSwift (5.0.6)
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - ChartsRealm (3.0.4):
+    - Charts (= 3.0.4)
+    - RealmSwift (~> 2.10)
+  - IQKeyboardManagerSwift (5.0.7)
   - LFLoginController (0.2.9)
-  - Realm (1.1.0):
-    - Realm/Headers (= 1.1.0)
-  - Realm/Headers (1.1.0)
-  - RealmSwift (1.1.0):
-    - Realm (= 1.1.0)
-  - SwiftProtobuf (1.0.1)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - RealmSwift (2.10.2):
+    - Realm (= 2.10.2)
+  - SwiftProtobuf (1.0.2)
   - SwiftSocket (2.0.2)
   - SwiftyJSON (4.0.0)
-  - SwipeableTabBarController (1.0.8)
+  - SwipeableTabBarController (1.0.10)
 
 DEPENDENCIES:
-  - Charts/Realm
+  - ChartsRealm
   - IQKeyboardManagerSwift
   - LFLoginController
   - SwiftProtobuf (~> 1.0)
@@ -25,16 +27,17 @@ DEPENDENCIES:
   - SwipeableTabBarController
 
 SPEC CHECKSUMS:
-  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  ChartsRealm: 3cf7c9ebf9c6312efbf418cf1da91d72d5416b26
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   LFLoginController: 550ddae1cc2ffdb7fa2253d4b28e607233127c6c
-  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
-  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
-  SwiftProtobuf: 78b2f4f3b282cad8cedf855358ec5c1921aaf633
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
+  SwiftProtobuf: e41d205c91eac0fb46823f2561712407fefdaf4e
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  SwipeableTabBarController: a5ac23b96e96aa35b857799e431f605f9350105a
+  SwipeableTabBarController: 7db57f2b3a5cd0a36abff1709eadfb2d7037cffa
 
-PODFILE CHECKSUM: 1547aeff76610a9adba9729450833bff337fba9c
+PODFILE CHECKSUM: fd5b11f5331369b5b57181c8f37654b4e128e7b3
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1

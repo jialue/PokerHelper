@@ -1,0 +1,8 @@
+Convert .proto files into Swift:
+To generate Swift output for your .proto files, you run the protoc command as usual, using the --swift_out=<directory> option:
+
+$ protoc --swift_out=. my.proto
+The protoc program will automatically look for protoc-gen-swift in your PATH and use it.
+
+Each .proto input file will get translated to a corresponding .pb.swift file in the output directory.
+

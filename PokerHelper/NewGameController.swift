@@ -26,6 +26,18 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         
     }
     
+    func processGameCreationMessage(message: String) -> Void {
+        print("processing \(message)");
+        do {
+            let game = try Proto_GameData.init(jsonString: message)
+            table?.games.append(game)
+            table?.tableView.reloadData()
+        }
+        catch {
+            
+        }
+    }
+    
     
     @IBAction func Create(_ sender: Any) {
         // Check inpouts if fail, return
@@ -38,35 +50,28 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         if bigBlindText.text == "" {
             bigBlindText.text = "2";
         }
-        //        if stackText.text == "" {
-        //            stackText.text = "200";
-        //        }
-        let gameData = dataController.create(entityName: "GameData") as! GameData
-        gameData.ratio = Float(ratioText.text!)!
-        gameData.smallblind = Int32(smallBlindText.text!)!
-        gameData.bigblind = Int32(bigBlindText.text!)!
-        gameData.date = NSDate()
-        //        defaultStack = Int(stackText.text!)!
-        table?.games.append(gameData)
-        table?.tableView.reloadData()
+
         
         // save to local
         dataController.save()
         
         //TODO send game context to server
-        var data = Proto_GameData();
-        data.smallBlind = gameData.smallblind
-        data.bigBlind = gameData.bigblind
-        data.ratio = gameData.ratio
-        data.buyin = gameData.buyin
-//        data.detail = gameData.detail!
-//        data.location = gameData.location
-        data.date.day = "25";
-        data.date.month = "11";
-        data.date.year = "2017";
-        let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: data)
-        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+//        let factor = 100
+        var game = Proto_GameData()
+//        game.id = Int32(Date().timeIntervalSince1970)
+        game.small = Int32(smallBlindText.text!)!
+        game.big = Int32(bigBlindText.text!)!
+        game.ratio = Int32(100)    // convert ratio to an integer by mulitplying with a factor
+        game.public = true;
+        game.owner = 25 // an example owner id, must be a valid user id
         
+        // US English Locale (en_US)
+        
+        game.date = "20180408"
+        let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: game)
+        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGameCreationMessage)
+        
+
         self.dismiss(animated: true, completion: {});
     }
 
@@ -74,5 +79,13 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: {});
     }
     
-
+    func getCurrentTimeStampWOMiliseconds(dateToConvert: NSDate) -> Int64 {
+        let objDateformat: DateFormatter = DateFormatter()
+        objDateformat.dateFormat = "yyyy-MM-dd"
+        let strTime: String = objDateformat.string(from: dateToConvert as Date)
+        let objUTCDate: NSDate = objDateformat.date(from: strTime)! as NSDate
+        let milliseconds: Int64 = Int64(objUTCDate.timeIntervalSince1970)
+//        let strTimeStamp: String = "\(milliseconds)"
+        return milliseconds
+    }
 }

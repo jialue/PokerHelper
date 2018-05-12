@@ -1,0 +1,2 @@
+Open issues:
+1. Player data can not be saved in core data, but game data works fine. (low priority for now as we are working on server connection and DB.)

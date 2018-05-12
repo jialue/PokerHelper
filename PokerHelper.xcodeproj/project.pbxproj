@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2FA22156463C3AD99869C288 /* Pods_PokerHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */; };
-		453CF4E01FCA2B6B0003A1A0 /* Date.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF4DE1FCA2B6B0003A1A0 /* Date.pb.swift */; };
-		453CF4E11FCA2B6B0003A1A0 /* GameData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF4DF1FCA2B6B0003A1A0 /* GameData.pb.swift */; };
-		453CF4E41FCBB8650003A1A0 /* GamePlayer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF4E31FCBB8650003A1A0 /* GamePlayer.pb.swift */; };
+		45D1E84720A413170091C1BB /* Date.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84320A413170091C1BB /* Date.pb.swift */; };
+		45D1E84820A413170091C1BB /* Player.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84420A413170091C1BB /* Player.pb.swift */; };
+		45D1E84920A413170091C1BB /* GameData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84520A413170091C1BB /* GameData.pb.swift */; };
+		45D1EF3D20A440A70091C1BB /* User.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1EF3C20A440A70091C1BB /* User.pb.swift */; };
+		45D1EF4620A5E79B0091C1BB /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1EF4520A5E79B0091C1BB /* ErrorType.swift */; };
+		45FA469720A3E251007E868A /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA469620A3E251007E868A /* logger.swift */; };
 		5D772E0C0F6E96914F195663 /* Pods_PokerHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */; };
 		6532EDE51E6F412B0065A80A /* LFLoginController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6564E7321E6E0D50008FB168 /* LFLoginController.framework */; };
 		6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */; };
@@ -59,9 +62,12 @@
 /* Begin PBXFileReference section */
 		11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DDD9F49036000219AD7886 /* Pods-PokerHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
-		453CF4DE1FCA2B6B0003A1A0 /* Date.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.pb.swift; sourceTree = "<group>"; };
-		453CF4DF1FCA2B6B0003A1A0 /* GameData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.pb.swift; sourceTree = "<group>"; };
-		453CF4E31FCBB8650003A1A0 /* GamePlayer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayer.pb.swift; sourceTree = "<group>"; };
+		45D1E84320A413170091C1BB /* Date.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.pb.swift; path = ../../../../proto/swift/Date.pb.swift; sourceTree = "<group>"; };
+		45D1E84420A413170091C1BB /* Player.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.pb.swift; path = ../../../../proto/swift/Player.pb.swift; sourceTree = "<group>"; };
+		45D1E84520A413170091C1BB /* GameData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameData.pb.swift; path = ../../../../proto/swift/GameData.pb.swift; sourceTree = "<group>"; };
+		45D1EF3C20A440A70091C1BB /* User.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.pb.swift; path = ../../../../proto/swift/User.pb.swift; sourceTree = "<group>"; };
+		45D1EF4520A5E79B0091C1BB /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		45FA469620A3E251007E868A /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 		62E74E1587522298D201652E /* Pods-PokerHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6564E6F51E6DFAD7008FB168 /* PokerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,9 +164,10 @@
 		453CF4DD1FCA2B6B0003A1A0 /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				453CF4E31FCBB8650003A1A0 /* GamePlayer.pb.swift */,
-				453CF4DE1FCA2B6B0003A1A0 /* Date.pb.swift */,
-				453CF4DF1FCA2B6B0003A1A0 /* GameData.pb.swift */,
+				45D1EF3C20A440A70091C1BB /* User.pb.swift */,
+				45D1E84320A413170091C1BB /* Date.pb.swift */,
+				45D1E84520A413170091C1BB /* GameData.pb.swift */,
+				45D1E84420A413170091C1BB /* Player.pb.swift */,
 			);
 			name = swift;
 			path = proto/swift;
@@ -202,12 +209,14 @@
 				65A65AF41E745DF600E90109 /* TabBar.storyboard */,
 				6564E72E1E6E0A98008FB168 /* Login.storyboard */,
 				6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */,
+				45D1EF4520A5E79B0091C1BB /* ErrorType.swift */,
 				6564E6FA1E6DFAD7008FB168 /* LoginController.swift */,
 				6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */,
 				6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */,
 				6564E7041E6DFAD7008FB168 /* Info.plist */,
 				65A65AF21E745B6B00E90109 /* TabBarController.swift */,
 				65A65AF71E74B2D200E90109 /* TableController.swift */,
+				45FA469620A3E251007E868A /* logger.swift */,
 				65A65AFC1E75FB1900E90109 /* GameCell.swift */,
 				65A65B021E76179900E90109 /* GameCellTableController.swift */,
 				65A65B041E771F1600E90109 /* PlayerCell.swift */,
@@ -398,9 +407,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PokerHelper/Pods-PokerHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LFLoginController/LFLoginController.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLoginController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -443,13 +473,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerHelper-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8B242756F781DE5A01E75AE /* [CP] Check Pods Manifest.lock */ = {
@@ -458,13 +491,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerHelperTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C19FEB0BC9E4E1F1BD92FE07 /* [CP] Check Pods Manifest.lock */ = {
@@ -473,13 +509,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerHelperUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7925B1338A59A03F6169D98 /* [CP] Copy Pods Resources */ = {
@@ -521,22 +560,25 @@
 			files = (
 				659B262A1E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift in Sources */,
 				65E9BD191ED11B600073E464 /* GameData+CoreDataProperties.swift in Sources */,
+				45D1E84920A413170091C1BB /* GameData.pb.swift in Sources */,
 				65A65AFD1E75FB1900E90109 /* GameCell.swift in Sources */,
+				45D1E84820A413170091C1BB /* Player.pb.swift in Sources */,
+				45D1EF4620A5E79B0091C1BB /* ErrorType.swift in Sources */,
 				65A65B321E79CABC00E90109 /* PokerHelper.xcdatamodeld in Sources */,
-				453CF4E11FCA2B6B0003A1A0 /* GameData.pb.swift in Sources */,
+				45FA469720A3E251007E868A /* logger.swift in Sources */,
 				659B26261E7F0A52007AB5EC /* GameData+CoreDataClass.swift in Sources */,
 				65A65B031E76179900E90109 /* GameCellTableController.swift in Sources */,
+				45D1E84720A413170091C1BB /* Date.pb.swift in Sources */,
 				65A65AF31E745B6B00E90109 /* TabBarController.swift in Sources */,
 				659B26311E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift in Sources */,
-				453CF4E41FCBB8650003A1A0 /* GamePlayer.pb.swift in Sources */,
 				6564E6FB1E6DFAD7008FB168 /* LoginController.swift in Sources */,
 				659B261F1E7EEFC6007AB5EC /* PokerHelpData.swift in Sources */,
 				65A65B051E771F1600E90109 /* PlayerCell.swift in Sources */,
 				65A65AFB1E74B5A600E90109 /* NewGameController.swift in Sources */,
-				453CF4E01FCA2B6B0003A1A0 /* Date.pb.swift in Sources */,
 				6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */,
 				65A65AF81E74B2D200E90109 /* TableController.swift in Sources */,
 				65A65B381E79D5B700E90109 /* DataController.swift in Sources */,
+				45D1EF3D20A440A70091C1BB /* User.pb.swift in Sources */,
 				65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */,
 				65B45A501F6AFA6F00EA6A36 /* Util.swift in Sources */,
 			);
@@ -685,11 +727,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAEF2WNX6P;
 				INFOPLIST_FILE = PokerHelper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -700,11 +742,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TAEF2WNX6P;
 				INFOPLIST_FILE = PokerHelper/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

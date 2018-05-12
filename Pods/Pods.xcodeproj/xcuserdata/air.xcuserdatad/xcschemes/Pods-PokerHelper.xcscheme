@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "56EF85C69CB8D4FF0EEB9F5AF32B81A5"
+               BlueprintIdentifier = "17D28BF35D09D20FFC61A4FCC01E764A"
                BuildableName = "Pods_PokerHelper.framework"
                BlueprintName = "Pods-PokerHelper"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56EF85C69CB8D4FF0EEB9F5AF32B81A5"
+            BlueprintIdentifier = "17D28BF35D09D20FFC61A4FCC01E764A"
             BuildableName = "Pods_PokerHelper.framework"
             BlueprintName = "Pods-PokerHelper"
             ReferencedContainer = "container:Pods.xcodeproj">

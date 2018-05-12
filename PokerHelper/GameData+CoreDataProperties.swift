@@ -1,9 +1,9 @@
 //
 //  GameData+CoreDataProperties.swift
-//  PokerHelper
+//  
 //
-//  Created by Jialue Huang on 5/20/17.
-//  Copyright © 2017 Jialue Huang. All rights reserved.
+//  Created by Jialue Huang on 25/02/2018.
+//
 //
 
 import Foundation
@@ -22,11 +22,12 @@ extension GameData {
     @NSManaged public var detail: String?
     @NSManaged public var end: Bool
     @NSManaged public var location: String?
-    @NSManaged public var playerData: Dictionary<String, Int>?
     @NSManaged public var playerBuyin: Dictionary<String, Int>?
+    @NSManaged public var playerData: Dictionary<String, Int>?
     @NSManaged public var playerNames: [String]?
     @NSManaged public var ratio: Float
     @NSManaged public var smallblind: Int32
     @NSManaged public var visible: Bool
+    @NSManaged public var id: Int64
 
 }
