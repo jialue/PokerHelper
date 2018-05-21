@@ -31,15 +31,12 @@ class LoginController: UIViewController {
         self.navigationController?.pushViewController(controller, animated: false)
         
         // login message
-        let request = Util.HttpRequest(method: "GET", requestURI: "/login", jsonString: "{\"username\": \"25\"}")
-        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: client!, completion: processLoginService)
-        
     }
     
-//    @IBAction func butLoginTapped(sender: AnyObject) {
-//        
-//        self.navigationController?.pushViewController(controller, animated: true)
-//    }
+    @IBAction func butLoginTapped(sender: AnyObject) {
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,12 +64,14 @@ extension LoginController: LFLoginControllerDelegate {
             
             controller.wrongInfoShake()
         } else {
-//            _ = navigationController?.popViewController(animated: true)
+//            self.performSegue(withIdentifier: <#T##String#>, sender: self)
+            _ = navigationController?.popViewController(animated: true)
             
-            let storyBoard : UIStoryboard = UIStoryboard(name: "TabBar", bundle:nil)
-            let tabBarController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
-            tabBarController.navigationItem.setHidesBackButton(true, animated:true);
-            self.navigationController?.pushViewController(tabBarController, animated: true)
+//            let storyBoard : UIStoryboard = UIStoryboard(name: "TabBar", bundle:nil)
+//            let tabBarController = storyBoard.instantiateViewController(withIdentifier: "TabBarController") as! TabBarController
+//            tabBarController.navigationItem.setHidesBackButton(false, animated:true);
+//            self.navigationController?.pushViewController(tabBarController, animated: true)
+//            self.navigationController?.popToViewController(tabBarController, animated: true)
         }
     }
     

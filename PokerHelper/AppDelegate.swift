@@ -34,12 +34,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch client!.connect(timeout: 10) {
         case .success:
             print("Connected to host \(client!.address)")
-            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client!)
+//            Util.ServerUtil.sendRequest(string: "GET /hello HTTP/1.0\r\n\r\n", using: client!)
         case .failure(let error):
             print(String(describing: error))
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationAction), name: NSNotification.Name(rawValue: "test"), object: nil)
+        
         return true
+    }
+    
+    @objc func notificationAction(noti: Notification) {
+        print(noti.name)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

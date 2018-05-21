@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2FA22156463C3AD99869C288 /* Pods_PokerHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59B8C47CD2A6EDD57121447 /* Pods_PokerHelperUITests.framework */; };
-		45D1E84720A413170091C1BB /* Date.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84320A413170091C1BB /* Date.pb.swift */; };
-		45D1E84820A413170091C1BB /* Player.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84420A413170091C1BB /* Player.pb.swift */; };
-		45D1E84920A413170091C1BB /* GameData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1E84520A413170091C1BB /* GameData.pb.swift */; };
-		45D1EF3D20A440A70091C1BB /* User.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1EF3C20A440A70091C1BB /* User.pb.swift */; };
+		4597124F20AAAB96002F5BB2 /* User.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597124A20AAAB96002F5BB2 /* User.pb.swift */; };
+		4597125020AAAB96002F5BB2 /* GameData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597124B20AAAB96002F5BB2 /* GameData.pb.swift */; };
+		4597125120AAAB96002F5BB2 /* GameInvitation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597124C20AAAB96002F5BB2 /* GameInvitation.pb.swift */; };
+		4597125220AAAB96002F5BB2 /* Player.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597124D20AAAB96002F5BB2 /* Player.pb.swift */; };
+		4597125320AAAB96002F5BB2 /* Date.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597124E20AAAB96002F5BB2 /* Date.pb.swift */; };
+		4597126C20AAB9CC002F5BB2 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4597126B20AAB9CC002F5BB2 /* SHA256.swift */; };
 		45D1EF4620A5E79B0091C1BB /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1EF4520A5E79B0091C1BB /* ErrorType.swift */; };
 		45FA469720A3E251007E868A /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FA469620A3E251007E868A /* logger.swift */; };
 		5D772E0C0F6E96914F195663 /* Pods_PokerHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */; };
 		6532EDE51E6F412B0065A80A /* LFLoginController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6564E7321E6E0D50008FB168 /* LFLoginController.framework */; };
 		6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */; };
-		6564E6FB1E6DFAD7008FB168 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E6FA1E6DFAD7008FB168 /* LoginController.swift */; };
 		6564E7001E6DFAD7008FB168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */; };
 		6564E7031E6DFAD7008FB168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */; };
 		6564E70E1E6DFAD7008FB168 /* PokerHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E70D1E6DFAD7008FB168 /* PokerHelperTests.swift */; };
 		6564E7191E6DFAD7008FB168 /* PokerHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6564E7181E6DFAD7008FB168 /* PokerHelperUITests.swift */; };
-		6564E72F1E6E0A98008FB168 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6564E72E1E6E0A98008FB168 /* Login.storyboard */; };
 		659B261F1E7EEFC6007AB5EC /* PokerHelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */; };
 		659B26261E7F0A52007AB5EC /* GameData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */; };
 		659B262A1E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B26281E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift */; };
@@ -62,16 +62,18 @@
 /* Begin PBXFileReference section */
 		11A4C27CF63957E57925822D /* Pods_PokerHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DDD9F49036000219AD7886 /* Pods-PokerHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperUITests/Pods-PokerHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
-		45D1E84320A413170091C1BB /* Date.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.pb.swift; path = ../../../../proto/swift/Date.pb.swift; sourceTree = "<group>"; };
-		45D1E84420A413170091C1BB /* Player.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.pb.swift; path = ../../../../proto/swift/Player.pb.swift; sourceTree = "<group>"; };
-		45D1E84520A413170091C1BB /* GameData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameData.pb.swift; path = ../../../../proto/swift/GameData.pb.swift; sourceTree = "<group>"; };
-		45D1EF3C20A440A70091C1BB /* User.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.pb.swift; path = ../../../../proto/swift/User.pb.swift; sourceTree = "<group>"; };
+		4597124A20AAAB96002F5BB2 /* User.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.pb.swift; sourceTree = "<group>"; };
+		4597124B20AAAB96002F5BB2 /* GameData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.pb.swift; sourceTree = "<group>"; };
+		4597124C20AAAB96002F5BB2 /* GameInvitation.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInvitation.pb.swift; sourceTree = "<group>"; };
+		4597124D20AAAB96002F5BB2 /* Player.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.pb.swift; sourceTree = "<group>"; };
+		4597124E20AAAB96002F5BB2 /* Date.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.pb.swift; sourceTree = "<group>"; };
+		4597126B20AAB9CC002F5BB2 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		4597126D20AAC0F6002F5BB2 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		45D1EF4520A5E79B0091C1BB /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		45FA469620A3E251007E868A /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 		62E74E1587522298D201652E /* Pods-PokerHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerHelperTests/Pods-PokerHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6564E6F51E6DFAD7008FB168 /* PokerHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6564E6FA1E6DFAD7008FB168 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6564E7021E6DFAD7008FB168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6564E7041E6DFAD7008FB168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +83,6 @@
 		6564E7141E6DFAD7008FB168 /* PokerHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6564E7181E6DFAD7008FB168 /* PokerHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHelperUITests.swift; sourceTree = "<group>"; };
 		6564E71A1E6DFAD7008FB168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6564E72E1E6E0A98008FB168 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		6564E7321E6E0D50008FB168 /* LFLoginController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LFLoginController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PokerHelper-cfguodylbxypvvaxoithvvhidcjv/Build/Products/Debug-iphonesimulator/LFLoginController/LFLoginController.framework"; sourceTree = "<group>"; };
 		659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHelpData.swift; sourceTree = "<group>"; };
 		659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameData+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -161,16 +162,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		453CF4DD1FCA2B6B0003A1A0 /* swift */ = {
+		4597124320AAAAE5002F5BB2 /* proto */ = {
 			isa = PBXGroup;
 			children = (
-				45D1EF3C20A440A70091C1BB /* User.pb.swift */,
-				45D1E84320A413170091C1BB /* Date.pb.swift */,
-				45D1E84520A413170091C1BB /* GameData.pb.swift */,
-				45D1E84420A413170091C1BB /* Player.pb.swift */,
+				4597124E20AAAB96002F5BB2 /* Date.pb.swift */,
+				4597124B20AAAB96002F5BB2 /* GameData.pb.swift */,
+				4597124C20AAAB96002F5BB2 /* GameInvitation.pb.swift */,
+				4597124D20AAAB96002F5BB2 /* Player.pb.swift */,
+				4597124A20AAAB96002F5BB2 /* User.pb.swift */,
 			);
-			name = swift;
-			path = proto/swift;
+			path = proto;
 			sourceTree = "<group>";
 		};
 		6564E6EC1E6DFAD7008FB168 = {
@@ -198,7 +199,7 @@
 		6564E6F71E6DFAD7008FB168 /* PokerHelper */ = {
 			isa = PBXGroup;
 			children = (
-				453CF4DD1FCA2B6B0003A1A0 /* swift */,
+				4597124320AAAAE5002F5BB2 /* proto */,
 				659B26281E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift */,
 				659B262F1E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift */,
 				659B26241E7F0A52007AB5EC /* GameData+CoreDataClass.swift */,
@@ -207,10 +208,8 @@
 				65A65B301E79CABC00E90109 /* PokerHelper.xcdatamodeld */,
 				65A65B061E786C2700E90109 /* NewPlayerController.swift */,
 				65A65AF41E745DF600E90109 /* TabBar.storyboard */,
-				6564E72E1E6E0A98008FB168 /* Login.storyboard */,
 				6564E6F81E6DFAD7008FB168 /* AppDelegate.swift */,
 				45D1EF4520A5E79B0091C1BB /* ErrorType.swift */,
-				6564E6FA1E6DFAD7008FB168 /* LoginController.swift */,
 				6564E6FF1E6DFAD7008FB168 /* Assets.xcassets */,
 				6564E7011E6DFAD7008FB168 /* LaunchScreen.storyboard */,
 				6564E7041E6DFAD7008FB168 /* Info.plist */,
@@ -223,6 +222,8 @@
 				65A65B371E79D5B700E90109 /* DataController.swift */,
 				659B261E1E7EEFC6007AB5EC /* PokerHelpData.swift */,
 				65B45A4F1F6AFA6F00EA6A36 /* Util.swift */,
+				4597126B20AAB9CC002F5BB2 /* SHA256.swift */,
+				4597126D20AAC0F6002F5BB2 /* BridgingHeader.h */,
 			);
 			path = PokerHelper;
 			sourceTree = "<group>";
@@ -365,7 +366,6 @@
 				65A65AF51E745DF600E90109 /* TabBar.storyboard in Resources */,
 				6564E7031E6DFAD7008FB168 /* LaunchScreen.storyboard in Resources */,
 				6564E7001E6DFAD7008FB168 /* Assets.xcassets in Resources */,
-				6564E72F1E6E0A98008FB168 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,26 +560,27 @@
 			files = (
 				659B262A1E7F0BBF007AB5EC /* PlayerData+CoreDataClass.swift in Sources */,
 				65E9BD191ED11B600073E464 /* GameData+CoreDataProperties.swift in Sources */,
-				45D1E84920A413170091C1BB /* GameData.pb.swift in Sources */,
+				4597125020AAAB96002F5BB2 /* GameData.pb.swift in Sources */,
 				65A65AFD1E75FB1900E90109 /* GameCell.swift in Sources */,
-				45D1E84820A413170091C1BB /* Player.pb.swift in Sources */,
 				45D1EF4620A5E79B0091C1BB /* ErrorType.swift in Sources */,
 				65A65B321E79CABC00E90109 /* PokerHelper.xcdatamodeld in Sources */,
+				4597125320AAAB96002F5BB2 /* Date.pb.swift in Sources */,
 				45FA469720A3E251007E868A /* logger.swift in Sources */,
 				659B26261E7F0A52007AB5EC /* GameData+CoreDataClass.swift in Sources */,
 				65A65B031E76179900E90109 /* GameCellTableController.swift in Sources */,
-				45D1E84720A413170091C1BB /* Date.pb.swift in Sources */,
 				65A65AF31E745B6B00E90109 /* TabBarController.swift in Sources */,
 				659B26311E7F44C0007AB5EC /* PlayerData+CoreDataProperties.swift in Sources */,
-				6564E6FB1E6DFAD7008FB168 /* LoginController.swift in Sources */,
+				4597126C20AAB9CC002F5BB2 /* SHA256.swift in Sources */,
+				4597124F20AAAB96002F5BB2 /* User.pb.swift in Sources */,
+				4597125120AAAB96002F5BB2 /* GameInvitation.pb.swift in Sources */,
 				659B261F1E7EEFC6007AB5EC /* PokerHelpData.swift in Sources */,
 				65A65B051E771F1600E90109 /* PlayerCell.swift in Sources */,
 				65A65AFB1E74B5A600E90109 /* NewGameController.swift in Sources */,
 				6564E6F91E6DFAD7008FB168 /* AppDelegate.swift in Sources */,
 				65A65AF81E74B2D200E90109 /* TableController.swift in Sources */,
 				65A65B381E79D5B700E90109 /* DataController.swift in Sources */,
-				45D1EF3D20A440A70091C1BB /* User.pb.swift in Sources */,
 				65A65B071E786C2700E90109 /* NewPlayerController.swift in Sources */,
+				4597125220AAAB96002F5BB2 /* Player.pb.swift in Sources */,
 				65B45A501F6AFA6F00EA6A36 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +732,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PokerHelper/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -746,6 +748,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.PokerHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PokerHelper/BridgingHeader.h;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

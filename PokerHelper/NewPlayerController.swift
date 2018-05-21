@@ -16,9 +16,9 @@ class NewPlayerController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
     override func viewDidLoad() {
-        let notificationCenter = NotificationCenter.default
+//        let notificationCenter = NotificationCenter.default
 //        notificationCenter.addObserver(self, forKeyPath:  #selector(NewPlayerController.test), name: "dd", context: dataController.managedObjectContext)
-        notificationCenter.addObserver(self, selector: #selector(NewPlayerController.test), name: NSNotification.Name.NSManagedObjectContextDidSave, object: dataController.managedObjectContext)
+//        notificationCenter.addObserver(self, selector: #selector(NewPlayerController.test), name: NSNotification.Name.NSManagedObjectContextDidSave, object: dataController.managedObjectContext)
         super.viewDidLoad()
         
     }
@@ -44,14 +44,33 @@ class NewPlayerController: UIViewController {
         }
     }
     
+    func processGameInvitationMessage(message: String) -> Void {
+        print("\(message)")
+//        NotificationCenter.default.post(name: NSNotification.Name.init(rawValue: "test"), object: "Hello 2017")
+    }
+    
     func addPlayer(playerName: String) throws -> Void {
+//        var message = JSON()
         var json = JSON()
         json["id"].int = table!.id;
         json["game_id"].int32 = table!.game!.id
         json["player_id"].int32 = Int32(playerName)
         json["player_name"].string = playerName
-        let request = Util.HttpRequest(method: "POST", requestURI: "/addUserToGame", json: json)
-        try Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processAddPlayerMessage)
+//        json["message"].object = message
+        try Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "addUserToGame", json: json), using: appDelegate.client!, completion: processAddPlayerMessage)
+    }
+    
+    func invitePlayer(playerName: String) -> Void {
+//        var message = JSON()
+        var json = JSON()
+        json["id"].int = table!.id;
+        json["game_id"].int32 = table!.game!.id
+//        message["player_id"].int32 = Int32(playerName)
+        var name = JSON();
+        name["name"].string = playerName
+        json["player_name_array"].arrayObject?.append(name)
+//        json["message"].object = message
+        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "inviteUser", json: json), using: appDelegate.client!, completion: processGameInvitationMessage)
     }
     
     @IBAction func Create(_ sender: Any) {
@@ -67,7 +86,8 @@ class NewPlayerController: UIViewController {
         }
         let names = playerName.text?.components(separatedBy: ";")
         for name in names! {
-            try addPlayer(playerName: name)
+//            try addPlayer(playerName: name)
+            invitePlayer(playerName: name)
         }
         self.dismiss(animated: true, completion: {});
         }

@@ -68,9 +68,9 @@ class NewGameController: UIViewController, UITextFieldDelegate {
         // US English Locale (en_US)
         
         game.date = "20180408"
-        let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: game)
-        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGameCreationMessage)
-        
+//        let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: game)
+//        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGameCreationMessage)
+        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "createGame", jsonString: try!game.jsonString()), using: appDelegate.client!, completion: processGameCreationMessage)
 
         self.dismiss(animated: true, completion: {});
     }

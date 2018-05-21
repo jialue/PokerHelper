@@ -11,7 +11,18 @@ import SwiftSocket
 import SwiftyJSON
 
 struct Util {
-    
+    static public func dateNowAsString() -> String {
+        let nowDate = Date()
+        let timeZone = TimeZone.init(identifier: "UTC")
+        let formatter = DateFormatter()
+        formatter.timeZone = timeZone
+        formatter.locale = Locale.init(identifier: "zh_CN")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let date = formatter.string(from: nowDate)
+//        return date.components(separatedBy: " ").first!
+        return date
+    }
 }
 
 
@@ -30,6 +41,30 @@ extension String {
 }
 
 extension Util {
+    class DealerServerRequest {
+        var _header: JSON = JSON()
+        var _body: JSON = JSON()
+        var _request: JSON = JSON()
+        init(service: String, jsonString: String) {
+            let message: JSON = JSON.init(parseJSON: jsonString)
+            _header["service"].string = service
+            _body["message"].object = message
+            _request["header"].object = _header
+            _request["body"].object = _body
+        }
+        
+        init(service: String, json: JSON) {
+            _header["service"].string = service
+            _body["message"] = json
+            _request["header"].object = _header
+            _request["body"].object = _body
+        }
+        
+        func toString() -> String {
+            return _request.rawString()!
+        }
+    }
+    
     class HttpRequest {
         var _method: String = String()
         var _requestURI: String = String()
@@ -133,6 +168,33 @@ extension Util {
             }
         }
         
+        static public func sendRequest(request: DealerServerRequest, using client: TCPClient, completion: (_ message: String) -> Void) {
+            print("Sending data ... ")
+            
+            switch client.send(string: request.toString()) {
+            case .success:
+                if let response = readResponse(from: client) {
+                    print("Response: \(response)")
+                    completion(response)
+                }
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
+        
+        static public func sendRequest(request: DealerServerRequest, using client: TCPClient, completion: (_ message: String) throws -> Void) throws {
+            print("Sending data ... ")
+            
+            switch client.send(string: request.toString()) {
+            case .success:
+                if let response = readResponse(from: client) {
+                    print("Response: \(response)")
+                    try completion(response)
+                }
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
         
         static public func readResponse(from client: TCPClient) -> String? {
             guard let response = client.read(1024*10, timeout:10) else { return nil }

@@ -20,7 +20,7 @@ class GameCellTableController: UITableViewController {
     var userInput : String?
     
     let username = "jialue"
-    let id = 25
+    let id = 19
     
     func processGameDetailMessage(message: String) {
         print("\(message)")
@@ -35,8 +35,9 @@ class GameCellTableController: UITableViewController {
     override func viewDidLoad() {
 //        let json: JSON = ["id":25]
 //        json["id"] = 25
-        let request = Util.HttpRequest(method: "GET", requestURI: "/getGameDetail", jsonString: "{\"id\":\(game!.id)}")
-        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGameDetailMessage)
+//        let request = Util.HttpRequest(method: "GET", requestURI: "/getGameDetail", jsonString: "{\"id\":\(game!.id)}")
+//        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGameDetailMessage)
+        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "getGameDetail", jsonString: "{\"id\":\(game!.id)}"), using: appDelegate.client!, completion: processGameDetailMessage)
         super.viewDidLoad()
     }
     

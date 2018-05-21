@@ -12,23 +12,20 @@ import SwiftSocket
 import SwiftyJSON
 
 class TableController: UITableViewController {
-//    let dataController = (UIApplication.shared.delegate as! AppDelegate).dataController
-//    var client = (UIApplication.shared.delegate as! AppDelegate).client
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//    var games = [GameData]()
-//    var gameData = [Proto_GameData]();
     var games = [Proto_GameData]()
     var cellGame: Proto_GameData?
     var dataController : DataController?
-//    var client : TCPClient?
-    // server info
-//    let host = "127.0.0.1"
-//    let port = 8081
-//    var client: TCPClient?
+    
+    public func loadGame(username: String) {
+        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "loadGame", jsonString: "{\"username\":\"\(username)\"}"), using: appDelegate.client!, completion: processGetGameReponse)
+    }
+
     func processGetGameReponse(message: String) {
         print("\(message)")
         do {
             try games = Proto_GameData.array(fromJSONString: message)
+            tableView.reloadData()
         }
         catch {
             print("error");
@@ -40,11 +37,8 @@ class TableController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginReq = Util.HttpRequest(method: "GET", requestURI: "/login", jsonString: "{\"username\":\"jialue\"}")
-        Util.ServerUtil.sendRequest(string: loginReq.generatHttpRequest(), using: appDelegate.client!, completion: processLoginMessage)
-        
-        let request = Util.HttpRequest(method: "GET", requestURI: "/loadGame", json: "{\"id\":25}")
-        Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!, completion: processGetGameReponse)
+//        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "login", jsonString: "{\"username\":\"jialue\"}"), using: appDelegate.client!, completion: processLoginMessage)
+//        Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "loadGame", jsonString: "{\"username\":\"jialue\"}"), using: appDelegate.client!, completion: processGetGameReponse)
     
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -82,6 +76,7 @@ class TableController: UITableViewController {
             data.id = game.id
             let request = Util.HttpRequest(method: "POST", requestURI: "/deleteGame", requestData: data)
             Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+//            Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "deleteGame", jsonString: try!data.jsonString()), using: appDelegate.client!, completion:()->Void{})
             
             // remove the item from the data model
 //            appDelegate.dataController.delete(object: games[indexPath.row])
@@ -130,8 +125,9 @@ class TableController: UITableViewController {
             
 //            let jsonString: String = try! data.jsonString()
 //            let json = try! Proto_GameData(jsonString: jsonString)
-            let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: data)
-            Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+//            let request = Util.HttpRequest(method: "POST", requestURI: "/createGame", requestData: data)
+//            Util.ServerUtil.sendRequest(string: request.generatHttpRequest(), using: appDelegate.client!)
+            Util.ServerUtil.sendRequest(request: Util.DealerServerRequest.init(service: "loadGame", jsonString: "{\"id\":25}"), using: appDelegate.client!, completion: processGetGameReponse)
             
             
         case .failure(let error):

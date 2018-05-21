@@ -46,11 +46,11 @@
             </objects>
             <point key="canvasLocation" x="-1116" y="132"/>
         </scene>
-        <!--Item-->
+        <!--My Game-->
         <scene sceneID="mEE-7C-tfn">
             <objects>
                 <navigationController id="1aR-0p-w2G" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jIF-pP-1o9"/>
+                    <tabBarItem key="tabBarItem" title="My Game" id="jIF-pP-1o9"/>
                     <navigationItem key="navigationItem" id="sF6-Yj-5AB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IVo-PX-hRH">
                         <autoresizingMask key="autoresizingMask"/>
@@ -324,6 +324,7 @@
         <!--View Controller-->
         <scene sceneID="n0B-hz-TDL">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVy-of-7A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="O8t-Ed-2U9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A9i-fj-nj0"/>
@@ -348,13 +349,13 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVy-of-7A9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="354" y="-562"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mBO-s7-vNi">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lm-JJ-xiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4Ne-fv-cGU" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UNl-yO-wlR"/>
@@ -380,7 +381,6 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="5"/>
                     </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lm-JJ-xiv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="356" y="132"/>
         </scene>

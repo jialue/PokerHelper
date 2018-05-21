@@ -437,7 +437,7 @@ public class LFLoginController: UIViewController {
         }
         butLogin.backgroundColor = buttonColor
         
-        butLogin.setTitle("Login", for: .normal)
+        butLogin.setTitle(isLogin ? "Login" : "Signup", for: .normal)
         butLogin.addTarget(self, action: #selector(sendTapped), for: .touchUpInside)
         butLogin.layer.cornerRadius = 5
         butLogin.layer.borderWidth = 1
@@ -465,7 +465,7 @@ public class LFLoginController: UIViewController {
     
     func setupForgotPasswordButton() {
         
-        butForgotPassword = UIButton(frame: CGRect(x: 0, y: butLogin.frame.maxY, width: loginView.frame.width, height: 40))
+        butForgotPassword = UIButton(frame: CGRect( x: 0, y: butLogin.frame.maxY, width: loginView.frame.width, height: 40))
         
         let font = UIFont(name: "HelveticaNeue-Medium", size: 12)!
         let titleString = NSAttributedString(string: "Forgot password", attributes: [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: UIColor.white])
